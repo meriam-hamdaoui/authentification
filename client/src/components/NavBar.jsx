@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Container } from "react-bootstrap";
+import { Nav, Navbar, Container } from "react-bootstrap";
 
 const NavBar = () => {
   return (
@@ -19,12 +19,12 @@ const NavBar = () => {
               flexDirection: "flex-end",
             }}
           >
-            <Navbar as={Link} to="/signin">
+            <Nav.Link as={Link} to="/signin">
               Signin
-            </Navbar>
-            <Navbar as={Link} to="/signup">
+            </Nav.Link>
+            <Nav.Link as={Link} to="/signup">
               Sign up
-            </Navbar>
+            </Nav.Link>
           </Navbar.Collapse>
         </Container>
       </Navbar>
